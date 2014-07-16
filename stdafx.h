@@ -7,24 +7,20 @@
 // FITNESS FOR A PARTICULAR PURPOSE.                                                 
 //===================================================================================
 
-
 #pragma once
 
-#include "resource.h"
-#include<iostream>
+#include "targetver.h"
 
-using namespace std;
+// TODO: reference additional headers your program requires here
+#include <tchar.h>
 
-//int test()
-//{
-//	return 0;
-//}
+// Windows Header Files:
+#include <windows.h>
+#include <psapi.h>
+#include <shlwapi.h>
+#include <strsafe.h>
+#include <shlobj.h>
 
-void ttt()
-{
-	int x = 1;
-}
-
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
+// std lib
+#include <string>
+#include <vector>
