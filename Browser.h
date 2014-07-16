@@ -15,7 +15,12 @@
 
 using namespace std;
 
-int test()
+//int test()
+//{
+//	return 0;
+//}
+
+void ttt()
 {
-	return 0;
+	int x = 1;
 }
