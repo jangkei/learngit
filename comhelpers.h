@@ -9,6 +9,17 @@
 
 
 #pragma once
+#include "ComPtr.h"
 
-#include "resource.h"
-#include<iostream>
+template<class T>
+HRESULT AssignToOutputPointer(T** pp, const ComPtr<T> &p)
+{
+    assert(pp);
+    *pp = p;
+    if ( nullptr != (*pp) )
+    {
+        (*pp)->AddRef();
+    }
+
+    return S_OK;
+}

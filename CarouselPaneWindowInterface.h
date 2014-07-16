@@ -10,5 +10,10 @@
 
 #pragma once
 
-#include "resource.h"
-#include<iostream>
+#include "PaneInterface.h"
+
+[uuid("4263B0F3-AD44-4A85-BC40-38F5CA850DAA")]
+__interface ICarouselPaneWindow : public IUnknown
+{
+    HRESULT __stdcall SetMediaPane(__in IPane* mediaPane);
+};
